@@ -8,8 +8,14 @@ const TaskM = mongoose.model('Task', {
     // createdBy: mongoose.Schema.Types.ObjectId,
     description: String,
     dueAt: Number,
-    flagged: Boolean,
-    order: Number,
+    flagged: {
+        default: false,
+        type: Boolean
+    },
+    order: {
+        default: 0,
+        type: Number
+    },
     title: {
         required: true,
         type: String
