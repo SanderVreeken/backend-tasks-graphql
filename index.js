@@ -41,6 +41,7 @@ const server = new ApolloServer({
 
 server.applyMiddleware({
     app,
+    // CORS nor working does a push work?
     cors: {
         origin: ['http://localhost:3000', 'https://next-tasks-typescript.vercel.app'],
         credentials: true,
