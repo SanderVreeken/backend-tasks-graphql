@@ -42,7 +42,7 @@ const server = new ApolloServer({
 server.applyMiddleware({
     app,
     cors: {
-        origin: ['http://localhost:3000', 'https://next-tasks-typescript.vercel.app/'],
+        origin: ['http://localhost:3000', 'https://next-tasks-typescript.vercel.app'],
         credentials: true,
     }
 })
